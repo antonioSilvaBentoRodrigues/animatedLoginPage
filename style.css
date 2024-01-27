@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+
+body{
+    background: #ff6e7f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bfe9ff, #ff6e7f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bfe9ff, #ff6e7f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.container-login{
+    background-color: rgba(255, 255, 255, 0.932);
+    height: 600px;
+    width: 450px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.container-login hr{
+    width: 200px;
+}
+
+.or-hr{
+    margin-top: 40px;
+}
+
+.container-login:hover{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.35);
+}
+
+.login-title{
+    font-size: 50px;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.password-login, .email-login{
+    margin-top: 15px;
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.login-btn{
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family:'Lora', sans-serif;
+    color: #fff;
+    background-color: #ED4264;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.login-btn:hover{
+  
+    background-color: #ff6e7f;
+    scale: 105%; 
+}
+
+.login-accounts{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    gap: 80px;
+
+
+}
+.login-google, .login-apple{
+    margin-top: 30px;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-apple:hover, .login-google:hover{
+    scale: 111%;
+}
+
+.login-apple span, .login-google span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+  
+.login-apple span::after,.login-google span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+  }
+  
+.login-apple:hover span, .login-google:hover span {
+    padding-right: 25px;
+  }
+  
+.login-apple:hover span:after, .login-google:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
